@@ -1,0 +1,264 @@
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #AD7AB4; 
+}
+
+
+
+#caixa {
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+.opcoes {
+    box-sizing: border-box;
+    overflow: auto;
+    background: #f9f9f9;
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+    height: 320px;
+    background: #FFDFF7;
+}
+ 
+.li {
+    box-sizing: border-box;
+    width: calc(100%-10px);
+    margin: 2%;
+    background: #f9f9f9;
+    vertical-align: top;
+}
+
+.li:hover {
+    box-sizing: border-box;
+    border: 1px solid #AD7AB4;    
+    margin: 2%;
+}
+
+/* JavaScript */
+
+.liClicado {
+    box-sizing: border-box;
+    width: calc(100%-10px);
+    margin: 2%;
+    background: #AD7AB4;
+}
+.clicado {
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;    
+}
+
+.caixaDetexto {
+    width: calc(100%-10px);
+    background: #FFDFF7;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.texto {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    /* background: #ff0000; */
+    width: calc(100% - 20px);
+}
+
+.descricao {
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 0px 10px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    /* background: #ff0000; */
+}
+
+#respostaSemCombinacaoCaixaTexto {
+    display: none;
+    box-sizing: border-box;
+    width: calc(100%-10px);
+    background: #FFDFF7;
+    border: 2px solid #AD7AB4;
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    margin: 10px 0px 10px 10px;
+}
+
+.preco {   
+    box-sizing: border-box;
+    display: inline-block;
+    width: 40%;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.precoP {    
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#rodape {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+
+#botaoSomenteArmacao {
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+}
+
+.armacaoSomente {
+    box-sizing: border-box;
+    border: 2px solid #AD7AB4;
+    width: 85%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
+    margin-left: 20px;
+    background: #FFDFF7;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#precoTotal {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    background: #FFDFF7;
+    vertical-align: top;
+    text-align: center;
+    padding: 1%;
+}
+
+.mostraValores {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33%;
+}
+
+#botaoAdicionarCarrinho {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+}
+
+.adicionarCarrinho {
+    visibility: visible;
+    box-sizing: border-box;
+    border: 2px solid #AD7AB4;
+    width: 85%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
+    margin-right: 20px;    
+    background: #FFDFF7;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+	.opcoes {
+        display: block;
+        width: calc(100% - 2%);
+        height: 100%;
+        margin: 1%;
+    }
+
+    .texto {
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .li {
+        display: inline-block;
+        width: calc(50% - 4%);
+    }
+
+    .efeito {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .preco {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #rodape {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #precoTotal {
+        box-sizing: border-box;
+        display: block;
+        margin: 0px;
+    }
+
+    #botaoSomenteArmacao {
+        box-sizing: border-box;
+        display: block;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .armacaoSomente { 
+        box-sizing: border-box;        
+        border-radius: 5px;
+        width: calc(100% - 2%);
+        margin: 1%;
+        padding: 1%;
+    }
+
+    #precoTotal {
+        margin: 1% auto;
+    }
+    
+    #botaoAdicionarCarrinho {
+        box-sizing: border-box;
+        display: block;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .adicionarCarrinho {
+        box-sizing: border-box;        
+        border-radius: 5px;
+        width: calc(100% - 2%);
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .mostraValores {
+        display: block;
+        box-sizing: border-box;
+        margin: auto;
+        padding-bottom: 1%;
+        padding: 2%;
+        width: 100%;
+    }
+}
