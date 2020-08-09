@@ -66,6 +66,7 @@ function requisicao(seBusca, valorBusca) {
         ".aviso"
       ).innerHTML = `<p>Não foi possível consultar o servidor. Erro: ${error.message}</p>`;
       busca.style.display = "block";
+      fechar.style.display = "none";
     });
 }
 
