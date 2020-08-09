@@ -1,0 +1,48 @@
+@media (max-width: 830px) {
+  #coins {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #header {
+    display: block;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  h1 {
+    margin-left: 0;
+  }
+  #pesquisa {
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    padding-bottom: 0;
+  }
+  #coins {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 420px) {
+  #coins {
+    display: block;
+  }
+
+  .media {
+    border-radius: 0;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.55);
+    box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.55);
+    border: 1px solid #000000;
+  }
+
+  .busca {
+    width: 100%;
+  }
+}

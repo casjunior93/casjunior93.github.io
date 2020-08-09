@@ -1,0 +1,114 @@
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+#header h1 {
+  margin-left: 30px;
+  font-style: 800;
+  font-size: 40px;
+  font-family: "Recursive", sans-serif;
+}
+
+#pesquisa {
+  display: flex;
+  margin-right: 30px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0 0 0 5px;
+  padding: 0 0 0 10px;
+  margin-right: 10px;
+}
+button {
+  height: 30px;
+  background: darkorange;
+  border: 0;
+  border-radius: 5px;
+}
+
+.busca {
+  display: none;
+  width: 400px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 5px;
+  background: orange;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.resultadoBusca {
+  font-style: 400;
+  font-family: "Recursive", sans-serif;
+  padding: 0px;
+  line-height: 1.5em;
+}
+
+#fechar {
+  text-decoration: underline;
+  color: black;
+  text-transform: uppercase;
+}
+
+#coins {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+p {
+  padding: 10px;
+  box-sizing: border-box;
+  font-style: 400;
+  font-family: "Recursive", sans-serif;
+}
+
+.media {
+  flex: 1 1 200px;
+  border-radius: 0 0 0 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 7px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow: 0px 7px 0px rgba(50, 50, 50, 0.55);
+  box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.55);
+  min-width: 150px;
+}
+
+.media:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+#footer {
+  border-top: 1px solid black;
+  text-align: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#footer p {
+  font-size: 20px;
+}
+
+.autor {
+  padding-top: 25px;
+}
+
+.linkAutor {
+  text-decoration: underline;
+  color: black;
+}
