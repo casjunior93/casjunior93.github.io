@@ -70,8 +70,3 @@ function requisicao(seBusca, valorBusca) {
 }
 
 requisicao(false, 0);
-
-var data = "2013-04-28T18:47:22.000Z";
-console.log(
-  data.substr(0, 10).split("-").reverse().toString().replace(/,/g, "/")
-);
