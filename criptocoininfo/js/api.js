@@ -51,7 +51,7 @@ function requisicao(seBusca, valorBusca) {
             <div class="resultado">
               <p>${buscador[0].symbol}</p>
               <p>${buscador[0].name}</p>
-              <p>${buscador[0].first_historical_data
+              <p>Desde: ${buscador[0].first_historical_data
                 .substr(0, 10)
                 .split("-")
                 .reverse()
