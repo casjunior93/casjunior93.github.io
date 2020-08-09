@@ -1,5 +1,5 @@
 var apiKey = {
-  key: "97939b9d-a1b9-44b9-b4c2-b5a456e713a3",
+  key: "97939b9d-a1b9-44b9-b4c2-b5a456e713a30",
 };
 
 //requisiçao Get
@@ -9,10 +9,7 @@ function requisicao(seBusca, valorBusca) {
       apiKey.key
   )
     .then((response) => {
-      if (!response.ok)
-        throw new Error(
-          "Erro ao executar a requisição, status " + response.status
-        );
+      if (!response.ok) throw new Error(response.status);
       return response.json();
     })
     .then((api) => {
@@ -65,7 +62,10 @@ function requisicao(seBusca, valorBusca) {
       }
     })
     .catch((error) => {
-      console.error(error.message);
+      document.querySelector(
+        ".aviso"
+      ).innerHTML = `<p>Não foi possível consultar o servidor. Erro: ${error.message}</p>`;
+      busca.style.display = "block";
     });
 }
 
