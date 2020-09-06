@@ -16,7 +16,7 @@ function requisicao(seBusca, valorBusca) {
       if (!seBusca) {
         var texto = "";
 
-        for (let i = 1; i <= 50; i++) {
+        for (let i = 1; i <= 25; i++) {
           texto =
             texto +
             `<div class="media">
